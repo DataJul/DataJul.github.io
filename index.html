@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Power BI – Julien Paulus</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,7 +13,11 @@
     <header class="hero">
         <h1>Portfolio Power BI</h1>
         <p>Analyses • Dashboards • Modélisation • Data Storytelling</p>
-        <a href="#projects" class="cta">Voir mes projets</a>
+
+        <div class="hero-links">
+            <a href="#projects">Mes projets</a>
+            <a href="#cv">Mon CV</a>
+        </div>
     </header>
 
     <!-- ===== ABOUT ===== -->
@@ -21,9 +25,9 @@
         <h2>À propos</h2>
         <p>
             Bienvenue sur mon portfolio.  
-            Je suis passionné par les données et spécialisé dans Power BI, la modélisation 
-            et la création de dashboards interactifs.  
-            Voici une sélection de mes projets personnels.
+            Je suis Data Analyst / BI Developer spécialisé en Power BI, Azure, Databricks,
+            SQL et la modélisation de données.  
+            Voici une sélection de mes dashboards et une section CV reprenant mon parcours professionnel.
         </p>
     </section>
 
@@ -37,19 +41,67 @@
             <p>Dashboard interactif présentant les KPIs commerciaux.</p>
 
             <div class="iframe-container">
-                <!-- Remplace le lien ci-dessous par ton lien Publish to Web -->
-                <div class="iframe-container">
-                    <iframe title="vélo (1)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTgwZDE1ODQtMWJkNi00MWE4LTk5MjItNTk3MDQ5NTAwYmFjIiwidCI6IjAyNGMyZDNlLWE1ZTAtNDc2MS1iOGMwLTE3YjExNDIyMDYwYiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
+                <iframe src="https://app.powerbi.com/view?r=TON_LIEN_1"
+                        frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card">
+            <h3>Analyse RH</h3>
+            <p>Visualisation sur la démographie employé, turnover et KPIs RH.</p>
+
+            <div class="iframe-container">
+                <iframe src="https://app.powerbi.com/view?r=TON_LIEN_2"
+                        frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
 
     </section>
 
+    <!-- ===== CV SECTION ===== -->
+    <section id="cv" class="cv">
+        <h2>Mon CV</h2>
+
+        <p>
+            Mon expérience complète est disponible sur LinkedIn :  
+            <a href="https://be.linkedin.com/in/paulusjulien" target="_blank">LinkedIn – Julien Paulus</a>
+        </p>
+
+        <h3>Résumé professionnel</h3>
+        <p>
+            Data Analyst / BI Developer spécialisé en Power BI, modélisation de données,
+            ETL cloud (Azure / Databricks), reporting orienté business et automatisation des pipelines.
+        </p>
+
+        <h3>Compétences clés</h3>
+        <ul>
+            <li>Power BI (DAX, Modèle Tabulaire, Report Design)</li>
+            <li>SQL (Azure SQL, SQL Server, optimisation requêtes)</li>
+            <li>Azure Data Lake, Databricks, PySpark</li>
+            <li>Python (Pandas, analyses data)</li>
+            <li>Data Modeling (Dimensionnel, Star Schema, bonnes pratiques BI)</li>
+        </ul>
+
+        <h3>Expérience professionnelle</h3>
+        <div class="cv-experience">
+            <h4>Data Analyst / BI Developer</h4>
+            <p><strong>Détails :</strong> Voir LinkedIn pour la description complète.</p>
+            <p><strong>Résumé :</strong> Création de dashboards interactifs, KPI business,
+            ingestion et transformation de données, documentation, optimisation performance reporting.</p>
+        </div>
+
+        <h3>Formation</h3>
+        <p>Voir le profil LinkedIn pour les détails complets.</p>
+    </section>
+
     <!-- ===== FOOTER ===== -->
     <footer>
         <p>© 2026 – Portfolio Power BI • Julien Paulus</p>
-        <p><a href="https://github.com/tonpseudo">Mon GitHub</a> • <a href="https://www.linkedin.com">LinkedIn</a></p>
+        <p>
+            <a href="https://github.com/tonpseudo" target="_blank">GitHub</a> •
+            <a href="https://be.linkedin.com/in/paulusjulien" target="_blank">LinkedIn</a>
+        </p>
     </footer>
 
 </body>
