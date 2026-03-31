@@ -137,24 +137,21 @@ body {
     box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
     margin-bottom: 20px;
 
-    display: flex;
+    display: flex;               /* ALIGNE LOGO + TEXTE */
     align-items: flex-start;
-    gap: 20px;
+    gap: 20px;                   /* ESPACE ENTRE LOGO ET TEXTE */
 }
 
 .cv-logo {
-    width: 55px;
+    width: 60px;                 /* TAILLE CONTRÔLÉE DU LOGO */
     height: auto;
     object-fit: contain;
+    flex-shrink: 0;              /* EMPÊCHE LE LOGO DE S'ÉTIRER */
     margin-top: 5px;
 }
 
-.cv-details h4 {
-    margin-bottom: 5px;
-}
-
 .cv-details p {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 /* ===== FOOTER ===== */
