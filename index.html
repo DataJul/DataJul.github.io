@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Power BI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Power BI – Julien Paulus</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h1>Bienvenue sur mon Portfolio Power BI</h1>
-  <p>Voici mes dashboards :</p>
 
-  <!-- Exemple d'intégration Power BI -->
-  <iframe title="vélo (1)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzY3MDcyNGEtNDI1Yy00MGM2LWJkMGEtZDBhMjJhOWQ2MmJmIiwidCI6IjAyNGMyZDNlLWE1ZTAtNDc2MS1iOGMwLTE3YjExNDIyMDYwYiIsImMiOjh9&pageName=475485e7352157facb96" frameborder="0" allowFullScreen="true"></iframe>
+<body>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+        <h1>Portfolio Power BI</h1>
+        <p>Analyses • Dashboards • Modélisation • Data Storytelling</p>
+        <a href="#projects" class="cta">Voir mes projets</a>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about">
+        <h2>À propos</h2>
+        <p>
+            Bienvenue sur mon portfolio.  
+            Je suis passionné par les données et spécialisé dans Power BI, la modélisation 
+            et la création de dashboards interactifs.  
+            Voici une sélection de mes projets personnels.
+        </p>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+        <h2>Mes Dashboards Power BI</h2>
+
+        <!-- Project Card 1 -->
+        <div class="card">
+            <h3>Analyse des Ventes</h3>
+            <p>Dashboard interactif présentant les KPIs commerciaux.</p>
+
+            <div class="iframe-container">
+                <!-- Remplace le lien ci-dessous par ton lien Publish to Web -->
+                <iframe 
+                    src="https://app.powerbi.com/view?r=TONLIENPUBLISH" 
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card">
+            <h3>Analyse RH</h3>
+            <p>Visualisation sur la démographie employé, turnover et KPIs RH.</p>
+
+            <div class="iframe-container">
+                <iframe title="vélo (1)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzY3MDcyNGEtNDI1Yy00MGM2LWJkMGEtZDBhMjJhOWQ2MmJmIiwidCI6IjAyNGMyZDNlLWE1ZTAtNDc2MS1iOGMwLTE3YjExNDIyMDYwYiIsImMiOjh9&pageName=475485e7352157facb96" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2026 – Portfolio Power BI • Julien Paulus</p>
+        <p><a href="https://github.com/tonpseudo">Mon GitHub</a> • <a href="https://www.linkedin.com">LinkedIn</a></p>
+    </footer>
 
 </body>
 </html>
