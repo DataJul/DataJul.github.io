@@ -140,7 +140,7 @@ body {
 
     display: flex !important;          /* FORCE FLEX */
     flex-direction: row !important;    /* LOGO À GAUCHE, TEXTE À DROITE */
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
