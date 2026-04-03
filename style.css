@@ -136,8 +136,8 @@ li {
     margin-bottom: 20px;
 }
 
-/* ===== FIX COMPLET ALIGNEMENT LOGO ===== */
 .cv-experience {
+    position: relative;
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -145,9 +145,10 @@ li {
     margin-bottom: 20px;
 
     display: flex !important;          /* FORCE FLEX */
-    flex-direction: row !important;    /* LOGO À GAUCHE, TEXTE À DROITE */
     align-items: center;
     gap: 20px;
+
+    cursor: pointer;
 }
 
 .cv-logo {
@@ -180,4 +181,35 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Zone résumé */
+.cv-summary {
+    position: absolute;
+    left: 105%;            /* ✅ positionné à droite de la carte */
+    top: 0;
+    width: 400px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    opacity: 0;            /* ✅ invisible au repos */
+    transform: translateX(20px);
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+/* ✅ Le résumé apparaît au survol */
+.cv-experience:hover .cv-summary {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive mobile */
+@media (max-width: 900px) {
+    .cv-summary {
+        display: none; /* trop petit → désactivation */
+    }
+}
+
 
