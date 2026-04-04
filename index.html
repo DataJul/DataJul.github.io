@@ -49,6 +49,7 @@
             </div>
 
             <div class="cv-summary">
+                <span class="close-summary">&times;</span>
                 <p>
                     <strong>Summary : </strong>As a Data Scientist, the objective of this project was to analyze business processes and requirements and translate them into a functional R or Power BI application. 
                     The proposed R solutions were delivered either as automated programs executed via a scheduler or as interactive Shiny applications. Power BI solutions were developed as applications and shared across the company through Power BI Service, ensuring broad accessibility for business users.
@@ -77,6 +78,7 @@
             </div>
 
             <div class="cv-summary">
+                <span class="close-summary">&times;</span>
                 <p>
                     <strong>Summary : </strong>As Functional Data Analyst, the goal of this project was to understand the business requirements and translate those needs into functional requirements for developers by using SAS EG as guidelines. In the meantime, I was also responsible for developing TDV views and API’s on OLAP or OLTP servers.
                 </p>
@@ -102,6 +104,7 @@
             </div>
 
             <div class="cv-summary">
+                <span class="close-summary">&times;</span>
                 <p>
                     <strong>Summary : </strong>IDDI provides Biostatistics and eClinical Services for clinical trials, with a strong focus on Clinical Data Management programming using SAS. The objective of this project was to deliver high-quality, validated, and FDA-compliant clinical trial data, ensuring full regulatory compliance and data integrity throughout the clinical development process.</p>
                 <p>
@@ -216,6 +219,31 @@
             <a href="https://be.linkedin.com/in/paulusjulien" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+<script>
+document.querySelectorAll('.cv-experience').forEach(exp => {
+    exp.addEventListener('click', function(e) {
+
+        // Ne pas fermer si clique sur la croix (géré ailleurs)
+        if (e.target.classList.contains('close-summary')) return;
+
+        // Fermer tous les autres résumés
+        document.querySelectorAll('.cv-summary').forEach(sum => sum.style.display = 'none');
+
+        // Ouvrir le résumé associé
+        const summary = this.querySelector('.cv-summary');
+        if (summary) summary.style.display = 'block';
+    });
+});
+
+// Fermeture via la croix
+document.querySelectorAll('.close-summary').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Empêche de rouvrir la carte
+        this.parentElement.style.display = 'none';
+    });
+});
+</script>
 
 </body>
 </html>

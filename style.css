@@ -182,34 +182,48 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Zone résumé */
+/* Résumé caché au départ */
 .cv-summary {
-    position: absolute;
-    left: 105%;            /* ✅ positionné à droite de la carte */
-    top: 0;
-    width: 400px;
+    display: none;
+    position: relative;
+    width: 100%;
     background: #fff;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 18px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-
-    opacity: 0;            /* ✅ invisible au repos */
-    transform: translateX(20px);
-    pointer-events: none;
-    transition: 0.25s ease;
 }
 
-/* ✅ Le résumé apparaît au survol */
-.cv-experience:hover .cv-summary {
-    opacity: 1;
-    transform: translateX(0);
+/* Croix de fermeture */
+.close-summary {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+}
+.close-summary:hover {
+    color: #000;
 }
 
-/* Responsive mobile */
-@media (max-width: 900px) {
-    .cv-summary {
-        display: none; /* trop petit → désactivation */
+/* Animation d’apparition (fade + slide) */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+/* Résumé animé quand il apparaît */
+.cv-summary {
+    animation: fadeSlideIn 1s ease forwards;
+}
+
 
 
