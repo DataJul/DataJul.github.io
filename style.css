@@ -160,6 +160,16 @@ li {
     display: block;
 }
 
+.cv-starschema {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
 .cv-details {
     flex: 1;
 }
