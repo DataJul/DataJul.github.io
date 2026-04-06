@@ -147,7 +147,19 @@ li {
     display: flex !important;          /* FORCE FLEX */
     align-items: center;
     gap: 20px;
+}
 
+.cv-experience-sub {
+    margin-left: 40px;   /* card du dessous → décale vers la droite */
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
     cursor: pointer;
 }
 
