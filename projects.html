@@ -37,6 +37,8 @@
         <div  class="card">
             <h3>Readme</h3>
             <p>All dimensions and fact tables are based on TXT files directly imported into Power BI, except for the date dimension, which is generated directly in Power BI.</p>
+            <p> SCD type 2 : DimEmployee, DimProduct, DimCustomer. The other dimensions don't have a SCD type even if it would be nice for the DimStore. </p>
+            <p> SCD type 1 : DimDate, DimStore, DimMarketing.</p>
             <p><strong>Sales report :</strong></p>
             <li>Total Net Sales : Somme des montants de ventes nettes.</li>
             <li>Quantities Sold : Somme des quantités vendues.</li>
@@ -58,6 +60,12 @@
             <li>Total Profit : Somme des marges.</li>
             <li> Return on Investment : Mesure explicite. Ratio entre le profit et le coût de la campagne marketing.</li>
             <p><strong>Employees report :</strong></p>
+            <li>Number of Employees : Somme des employés actifs sur la période sélectionnée et faisant toujours parti de l'organisation.</li>
+            <li>Number of Sick Days : Somme des jours de maladie sur la période sélectionnée pris par les employés actifs et faisant toujours parti de l'organisation.</li>
+            <li>% of Holidays Used : Mesure explicite. Pourcentage des congés utilisés par les employés actifs et faisant toujours parti de l'organisation par rapport au total des congés disponibles (20 jours légaux).</li>
+            <li>Turnover : Mesure explicite. </li>
+            <li></li>
+            <li></li>
         </div>
 
         <div class="card">
