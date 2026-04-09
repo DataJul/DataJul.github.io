@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fc3342b7-d209-4207-a9ed-3d0e01278c71" type="text/javascript" async></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Projets – Julien Paulus</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -30,36 +33,37 @@
         <div  class="card">
             <h3>Readme</h3>
             <p>All dimensions and fact tables are based on TXT files directly imported into Power BI, except for the date dimension, which is generated directly in Power BI.</p>
-            <p> SCD type 2 : DimEmployee, DimProduct, DimCustomer. The other dimensions don't have a SCD type even if it would be nice for the DimStore. </p>
-            <p> SCD type 1 : DimDate, DimStore, DimMarketing.</p>
+            <p>SCD type 2 : DimEmployee, DimProduct, DimCustomer. The other dimensions don't have a SCD type even if it would be nice for the DimStore. </p>
+            <p>SCD type 1 : DimDate, DimStore, DimMarketing.</p>
+            <p>Some marketing definitions </p>
             <p><strong>Sales report :</strong></p>
-            <li>Total Net Sales : Somme des montants de ventes nettes.</li>
-            <li>Quantities Sold : Somme des quantités vendues.</li>
-            <li>Total Margin : Somme des marges.</li>
-            <li>Total Discounts : Somme des remises.</li>
-            <li>Top Seller : Mesure explicite. Employé de type vendeur ayant la somme des ventes brutes la plus élevée.</li>
+            <li>Total Net Sales: Sum of net sales amounts.</li>
+            <li>Quantities Sold: Sum of quantities sold.</li>
+            <li>Total Margin: Sum of margins.</li>
+            <li>Total Discounts: Sum of discounts.</li>
+            <li>Top Seller: Explicit measure. Sales employee with the highest total gross sales.</li>
             <p><strong>Customers report :</strong></p>
-            <li>Total Net Sales : Somme des montants de ventes nettes.</li>
-            <li>Global New Customers : Mesure explicite. Nombre de nouveaux clients tous magasins confondus. Pas filtrable par magasin.</li>
-            <li>Number of Customers : Mesure explicite. Nombre de clients</li>
-            <li>Churn Rate : Mesure explicite. Pourcentage de clients perdus.</li>
-            <li>Average Basket : Mesure explicite.Dépenses moyennes par client par magasin.</li>
+           <li>Total Net Sales: Sum of net sales amounts.</li>
+            <li>Global New Customers: Explicit measure. Number of new customers across all stores. Not filterable by store.</li>
+            <li>Number of Customers: Explicit measure. Number of customers.</li>
+            <li>Churn Rate: Explicit measure. Percentage of lost customers.</li>
+            <li>Average Basket: Explicit measure. Average spending per customer per store.</li>
             <p><strong>Marketing report :</strong></p>
-            <li>Total Sales : Somme des montants des ventes bruttes.</li>
-            <li>Total Net Sales : Somme des montants de ventes nettes.</li>
-            <li>Customers Acquired : Mesure explicite. Nombre de nouveaux clients dont la vente a été réalisée dans le cadre de la campagne marketing.</li>
-            <li>Customers Reached : Mesure explicite. Nombre de clients (nouveaux + anciens) ayant acheté dans le cadre de la campagne marketing.</li>
-            <li>Campaign Cost : Mesure explicite. Coût total de la campagne marketing. Somme des réductions + coût de la campagne marketing.</li>
-            <li>Total Profit : Somme des marges.</li>
-            <li> Return on Investment : Mesure explicite. Ratio entre le profit et le coût de la campagne marketing.</li>
+            <li>Total Sales: Sum of gross sales amounts.</li>
+            <li>Total Net Sales: Sum of net sales amounts.</li>
+            <li>Customers Acquired: Explicit measure. Number of new customers whose purchase was made as part of the marketing campaign.</li>
+            <li>Customers Reached: Explicit measure. Number of customers (new + existing) who made a purchase as part of the marketing campaign.</li>
+            <li>Campaign Cost: Explicit measure. Total cost of the marketing campaign. Sum of discounts + marketing campaign cost.</li>
+            <li>Total Profit: Sum of margins.</li>
+            <li>Return on Investment: Explicit measure. Ratio between profit and the cost of the marketing campaign.</li>
             <p><strong>Employees report :</strong></p>
-            <li>Number of Employees : Somme des employés actifs sur la période sélectionnée et faisant toujours parti de l'organisation.</li>
-            <li>Number of Sick Days : Somme des jours de maladie sur la période sélectionnée pris par les employés actifs et faisant toujours parti de l'organisation.</li>
-            <li>% of Holidays Used : Mesure explicite. Pourcentage des congés utilisés par les employés actifs et faisant toujours parti de l'organisation par rapport au total des congés disponibles (20 jours légaux).</li>
-            <li>Turnover : Mesure explicite. Différence entre le nombre d'employés au début de la période et le nombre d'employés à la fin de la période divisé par la moyenne entre le nombre d'employés au début et à la fin de la période.</li>
-            <li>Absence Rate : Mesure explicite. Somme des jours de maladie divisé par le nombre total de jours de travail (jours ouvrables moins les congés) dans la période sélectionnée.</li>
-            <li>Theoritical Capacity : Mesure explicite. Somme des jours prestés divisé par le le nombre total de jours de travail (jours ouvrables moins les congés) dans la période sélectionnée. Dans notre cas, il s'agit de l'inverse de l'absence rate</li>
-        </div>
+            <li>Number of Employees: Sum of active employees during the selected period who are still part of the organization.</li>
+            <li>Number of Sick Days: Sum of sick days during the selected period taken by active employees who are still part of the organization.</li>
+            <li>% of Holidays Used: Explicit measure. Percentage of holidays used by active employees who are still part of the organization compared to the total available holidays (20 legal days).</li>
+            <li>Turnover: Explicit measure. Difference between the number of employees at the beginning of the period and the number at the end of the period, divided by the average number of employees between the beginning and the end of the period.</li>
+            <li>Absence Rate: Explicit measure. Sum of sick days divided by the total number of working days (working days minus holidays) in the selected period.</li>
+            <li>Theoretical Capacity: Explicit measure. Sum of days worked divided by the total number of working days (working days minus holidays) in the selected period. In this case, it is the inverse of the absence rate.</li>
+            </div>
 
         <div class="card">
             <h3>Star Schema</h3>
