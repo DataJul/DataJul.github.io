@@ -6,7 +6,6 @@
 
     <!-- Google Analytics bloqué -->
     <script type="text/plain" data-cookieconsent="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-7YMBDK8VJB"></script>
-
     <script type="text/plain" data-cookieconsent="statistics">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -16,72 +15,96 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets – Julien Paulus</title>
+    <title>Projets Power BI — Julien Paulus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- ===== HERO ===== -->
     <div id="site-header"></div>
     <script src="load-header.js"></script>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="projects">
-        <h2>Mes Dashboards Power BI</h2>
+    <!-- ===== PAGE HERO ===== -->
+    <div class="page-hero">
+        <div class="section-label">Dashboards</div>
+        <h1>Projets Power BI</h1>
+    </div>
 
-        <!-- Project Card 1 -->
+    <!-- ===== PROJECTS ===== -->
+    <div class="projects-wrapper">
+
+        <!-- Dashboard -->
         <div class="card">
             <h3>PowerBIke</h3>
             <p>Dashboard built on a star schema created from scratch using fictitious data.</p>
-
             <div class="iframe-container">
-                <iframe title="vélo" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjEzMTY5MDItOGYwZi00NGZjLTgwYjgtYWE0MmU3NWJhMTgxIiwidCI6IjAyNGMyZDNlLWE1ZTAtNDc2MS1iOGMwLTE3YjExNDIyMDYwYiIsImMiOjh9&pageName=475485e7352157facb96" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="vélo" width="600" height="373.5"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiYjEzMTY5MDItOGYwZi00NGZjLTgwYjgtYWE0MmU3NWJhMTgxIiwidCI6IjAyNGMyZDNlLWE1ZTAtNDc2MS1iOGMwLTE3YjExNDIyMDYwYiIsImMiOjh9&pageName=475485e7352157facb96"
+                    frameborder="0" allowFullScreen="true">
+                </iframe>
             </div>
         </div>
 
-        <div  class="card">
-            <h3>Readme</h3>
-            <p>All dimensions and fact tables are based on TXT files directly imported into Power BI, except for the date dimension, which is generated directly in Power BI.</p>
-            <p>SCD type 2 : DimEmployee, DimProduct, DimCustomer. The other dimensions don't have a SCD type even if it would be nice for the DimStore. </p>
-            <p>SCD type 1 : DimDate, DimStore, DimMarketing.</p>
-            <p>Some definitions have been adapted to our case.</p>
-            <p><strong>Sales report :</strong></p>
-            <li>Total Net Sales: Sum of net sales amounts.</li>
-            <li>Quantities Sold: Sum of quantities sold.</li>
-            <li>Total Margin: Sum of margins.</li>
-            <li>Total Discounts: Sum of discounts.</li>
-            <li>Top Seller: Explicit measure. Sales employee with the highest total gross sales.</li>
-            <p><strong>Customers report :</strong></p>
-           <li>Total Net Sales: Sum of net sales amounts.</li>
-            <li>Global New Customers: Explicit measure. Number of new customers across all stores. Not filterable by store.</li>
-            <li>Number of Customers: Explicit measure. Number of customers.</li>
-            <li>Churn Rate: Explicit measure. Percentage of lost customers.</li>
-            <li>Average Basket: Explicit measure. Average spending per customer per store.</li>
-            <p><strong>Marketing report :</strong></p>
-            <li>Total Sales: Sum of gross sales amounts.</li>
-            <li>Total Net Sales: Sum of net sales amounts.</li>
-            <li>Customers Acquired: Explicit measure. Number of new customers whose purchase was made as part of the marketing campaign.</li>
-            <li>Customers Reached: Explicit measure. Number of customers (new + existing) who made a purchase as part of the marketing campaign.</li>
-            <li>Campaign Cost: Explicit measure. Total cost of the marketing campaign. Sum of discounts + marketing campaign cost.</li>
-            <li>Total Profit: Sum of margins.</li>
-            <li>Return on Investment: Explicit measure. Ratio between profit and the cost of the marketing campaign.</li>
-            <p><strong>Employees report :</strong></p>
-            <li>Number of Employees: Sum of active employees during the selected period who are still part of the organization.</li>
-            <li>Number of Sick Days: Sum of sick days during the selected period taken by active employees who are still part of the organization.</li>
-            <li>% of Holidays Used: Explicit measure. Percentage of holidays used by active employees who are still part of the organization compared to the total available holidays (20 legal days).</li>
-            <li>Turnover: Explicit measure. Difference between the number of employees at the beginning of the period and the number at the end of the period, divided by the average number of employees between the beginning and the end of the period.</li>
-            <li>Absence Rate: Explicit measure. Sum of sick days divided by the total number of working days (working days minus holidays) in the selected period.</li>
-            <li>Theoretical Capacity: Explicit measure. Sum of days worked divided by the total number of working days (working days minus holidays) in the selected period. In this case, it is the inverse of the absence rate.</li>
-            </div>
-
+        <!-- README -->
         <div class="card">
-            <h3>Star Schema</h3>
-            <img src="img/starschema.PNG" alt="StarSchema Logo" class="cv-starschema">
+            <h3>Documentation</h3>
+            <p>
+                All dimensions and fact tables are based on TXT files directly imported into Power BI, except for the date dimension, which is generated directly in Power BI.
+            </p>
+            <p><strong>SCD type 2 :</strong> DimEmployee, DimProduct, DimCustomer.</p>
+            <p><strong>SCD type 1 :</strong> DimDate, DimStore, DimMarketing.</p>
+            <p>Some definitions have been adapted to our case.</p>
+
+            <p style="margin-top: 16px;"><strong>Sales report</strong></p>
+            <ul>
+                <li>Total Net Sales — Sum of net sales amounts.</li>
+                <li>Quantities Sold — Sum of quantities sold.</li>
+                <li>Total Margin — Sum of margins.</li>
+                <li>Total Discounts — Sum of discounts.</li>
+                <li>Top Seller — Explicit measure : seller with the highest gross sales.</li>
+            </ul>
+
+            <p style="margin-top: 14px;"><strong>Customers report</strong></p>
+            <ul>
+                <li>Total Net Sales — Sum of net sales amounts.</li>
+                <li>Global New Customers — Explicit measure. Number of new customers across all stores. Not filterable by store.</li>
+                <li>Number of Customers — Explicit measure. Number of customers.</li>
+                <li>Churn Rate — Explicit measure. Percentage of lost customers.</li>
+                <li>Average Basket — Explicit measure.Average spending per customer and per store.</li>
+            </ul>
+
+            <p style="margin-top: 14px;"><strong>Marketing report</strong></p>
+            <ul>
+                <li>Total Sales - Sum of gross sales amounts.</li>
+                <li>Total Net Sales — Sum of net sales amounts.</li>
+                <li>Customers Acquired — Explicit measure. New customers acquired through marketing campaigns.</li>
+                <li>Customers Reached — Explicit measure. Customers (new + existing) who made purchases during the campaign.</li>
+                <li>Campaign Cost — Explicit measure. Total cost: discounts + campaign cost.</li>
+                <li>Total Profit: Sum of margins.</li>
+                <li>Return on Investment — Explicit measure. Ratio between profit and the cost of the marketing campaign.</li>
+            </ul>
+
+            <p style="margin-top: 14px;"><strong>Employees report</strong></p>
+            <ul>
+                <li>Number of Employees — Sum of active employees during the selected period who are still part of the organization.</li>
+                <li>Number of Sick Days - Sum of sick days during the selected period taken by active employees who are still part of the organization.</li>
+                <li>% of Holidays Used — Explicit measure. Percentage of holidays used by active employees who are still part of the organization compared to the total available holidays (20 legal days).</li>
+                <li>Turnover — Explicit measure. Difference between the number of employees at the beginning of the period and the number at the end of the period, divided by the average number of employees between the beginning and the end of the period.</li>
+                <li>Absence Rate — Explicit measure. Sum of sick days divided by the total number of working days (working days minus holidays) in the selected period.</li>
+                <li>Theoretical Capacity — Explicit measure. Sum of days worked divided by the total number of working days (working days minus holidays) in the selected period. In this case, it is the inverse of the absence rate.</li>
+            </ul>
         </div>
 
-    </section>
+        <!-- Star Schema -->
+        <div class="card">
+            <h3>Schéma en étoile</h3>
+            <img src="img/starschema.PNG" alt="Star Schema" class="cv-starschema">
+        </div>
+
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <div id="site-footer"></div>

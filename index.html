@@ -1,245 +1,382 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <!-- Cookiebot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fc3342b7-d209-4207-a9ed-3d0e01278c71" type="text/javascript" async></script>
 
     <!-- Google Analytics bloqué -->
     <script type="text/plain" data-cookieconsent="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-7YMBDK8VJB"></script>
-
     <script type="text/plain" data-cookieconsent="statistics">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-7YMBDK8VJB');
     </script>
-    
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julien Paulus</title>
+    <title>Julien Paulus — Data Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ===== HERO ===== -->
     <div id="site-header"></div>
     <script src="load-header.js"></script>
 
-    <!-- ===== CV SECTION ===== -->
-    <section id="cv" class="cv">
-        <h2>Curriculum Vitae</h2>
+    <!-- ===== CV ===== -->
+    <div class="section-wrapper" id="cv">
+      <div class="cv-paper">
 
-        <h3>Résumé professionnel</h3>
-        <p>
-            Data Analyst / BI Developer spécialisé en Power BI, modélisation de données,
-            ETL cloud (Azure / Databricks), reporting orienté business et automatisation des pipelines.
-        </p>
+        <!-- LEFT SIDEBAR -->
+        <aside class="cv-left">
 
-        <h3>Expériences professionnelles</h3>
-        <div class="cv-experience">
-            <img src="img/logo-laco.jpg" alt="LACO Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Data Consultant</h4>
-                <p><strong>Period :</strong> July 2018 - Present </p>
+          <!-- Photo -->
+          <div class="cv-photo-wrap">
+            <div class="cv-photo-placeholder">
+              <span>JP</span>
             </div>
-        </div>
+          </div>
 
-        <div class="cv-experience-sub">
-            <img src="img/logo-nbb.jpg" alt="NBB Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Data Scientist</h4>
-                <p><strong>Period :</strong> November 2024 - Dec 2025</p>
-            </div>
+          <!-- Contact -->
+          <div class="cv-left-section">
+            <div class="cv-left-label">Contact</div>
+            <a href="https://linkedin.com/in/julienpaulus" class="cv-contact-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/julienpaulus
+            </a>
+            <a href="https://github.com/DataJul" class="cv-contact-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              github.com/DataJul
+            </a>
+          </div>
 
-            <div class="cv-summary">
-                <span class="close-summary">&times;</span>
-                <p>
-                    <strong>Summary : </strong>As a Data Scientist, the objective of this project was to analyze business processes and requirements and translate them into a functional R or Power BI application. 
-                    The proposed R solutions were delivered either as automated programs executed via a scheduler or as interactive Shiny applications. Power BI solutions were developed as applications and shared across the company through Power BI Service, ensuring broad accessibility for business users.
-                    This initiative aimed to enhance process automation while ensuring full compliance with the bank’s strategic goals and data governance framework.​
-                    As part of a migration to the cloud, it was also necessary to carry out POCs in Python in order to highlight certain improvements and ensure that the cloud solution would meet business requirements.
-                </p>
-                <p>
-                    <strong>Responsabilities : </strong>
-                    <li>Understanding user needs and business processes.</li>
-                    <li>Translating user needs into functional R or Power BI applications.</li>
-                    <li>Collaborating with the account officers to understand their requirements.</li>
-                    <li>Testing apps.</li>
-                    <li>Promoting solutions across the company.</li>
-                    <li>Ensured full alignment with the bank’s strategic objectives and data governance standards.</li>
-                    <li>Creating documentations.</li>
-                </p>
+          <!-- Languages -->
+          <div class="cv-left-section">
+            <div class="cv-left-label">Languages</div>
+            <div class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name">French</span>
+                <span class="cv-lang-level">Native</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="width:100%"></div></div>
             </div>
-        </div>
+            <div class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name">English</span>
+                <span class="cv-lang-level">Professional</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="width:75%"></div></div>
+            </div>
+            <div class="cv-lang-item">
+              <div class="cv-lang-header">
+                <span class="cv-lang-name">Dutch</span>
+                <span class="cv-lang-level">Basic</span>
+              </div>
+              <div class="cv-lang-bar"><div class="cv-lang-fill" style="width:25%"></div></div>
+            </div>
+          </div>
 
-        <div class="cv-experience-sub">
-            <img src="img/logo-belfius.png" alt="BELFIUS Logo" class="cv-logo">
+          <!-- Skills -->
+          <div class="cv-left-section">
+            <div class="cv-left-label">Key Skills</div>
+            <ul class="cv-bullet-list">
+              <li>Power BI</li>
+              <li>Microsoft Fabric</li>
+              <li>DAX / M</li>
+              <li>Azure Data Factory</li>
+              <li>Databricks</li>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>R / Shiny</li>
+              <li>SAS</li>
+              <li>TDV</li>
+              <li>CDISC / SDTM</li>
+              <li>Star Schema</li>
+              <li>ETL</li>
+              <li>Data Modeling</li>
+            </ul>
+          </div>
 
-            <div class="cv-details">
-                <h4>Functionnal Analyst</h4>
-                <p><strong>Period :</strong> July 2022 - August 2024</p>
-            </div>
+          <!-- Interests -->
+          <div class="cv-left-section">
+            <div class="cv-left-label">Interests</div>
+            <ul class="cv-bullet-list">
+              <li>Cycling</li>
+              <li>DIY</li>
+              <li>Technology</li>
+              <li>Padel</li>
+            </ul>
+          </div>
 
-            <div class="cv-summary">
-                <span class="close-summary">&times;</span>
-                <p>
-                    <strong>Summary : </strong>As Functional Data Analyst, the goal of this project was to understand the business requirements and translate those needs into functional requirements for developers by using SAS EG as guidelines. In the meantime, I was also responsible for developing TDV views and API’s on OLAP or OLTP servers.
-                </p>
-                <p>
-                    <strong>Responsabilities : </strong>
-                    <li>Understanding user needs and business processes.</li>
-                    <li>Translating user needs into functional requirements for developers using SAS EG and SAS DI as guidelines.</li>
-                    <li>Close collaboration with technical teams to ensure accurate implementation of SAS DI jobs and data flows.</li>
-                    <li>Testing features to ensure they meet user requirements.</li>
-                    <li>Creating APIs and views on TDV + access management.</li>
-                    <li>Promoting TDV solutions in higher environment.</li>
-                    <li>Maintaining TDV solutions.</li>
-                </p>
-            </div>
-        </div>
+        </aside>
 
-        <div class="cv-experience-sub">
-            <img src="img/logo-iddi.png" alt="IDDI Logo" class="cv-logo">
+        <!-- RIGHT MAIN CONTENT -->
+        <main class="cv-right">
 
-            <div class="cv-details">
-                <h4>Data Engineer</h4>
-                <p><strong>Period :</strong> February 2019 - January 2022</p>
+          <!-- Hero intégré -->
+          <div class="cv-right-hero">
+            <h1>Julien <span>Paulus</span></h1>
+            <span class="hero-tag">Data Consultant</span>
+            <div class="cv-right-profil">
+              <div class="timeline-block-title">Profile</div>
+              <div class="summary-card">
+                Data Analyst / BI Developer with over 7 years of experience in data consulting.
+                Working in demanding financial and scientific environments, I design business-oriented
+                reporting solutions and robust data pipelines on Azure and Databricks stacks.
+              </div>
             </div>
+          </div>
 
-            <div class="cv-summary">
-                <span class="close-summary">&times;</span>
-                <p>
-                    <strong>Summary : </strong>IDDI provides Biostatistics and eClinical Services for clinical trials, with a strong focus on Clinical Data Management programming using SAS. The objective of this project was to deliver high-quality, validated, and FDA-compliant clinical trial data, ensuring full regulatory compliance and data integrity throughout the clinical development process.</p>
-                <p>
-                    <strong>Responsabilities : </strong>
-                    <li>Design, optimization, and maintenance of advanced SAS macros for data mapping, validation, and automation of CDM workflows.</li>
-                    <li>Development of robust SAS programs to generate IDDI standards datasets and CDISC-compliant SDTM datasets.</li>
-                    <li>Implementation of SAS-based data cleaning, data coding, and data reconciliation processes to ensure data accuracy and consistency.</li>
-                    <li>Contribution to the standardization and validation of SAS programs in accordance with regulatory and internal quality requirements.</li>
-                </p>
-            </div>
-        </div>
+          <!-- Experience -->
+          <div class="timeline-block">
+            <div class="timeline-block-title">Work Experience</div>
+            <div class="timeline">
 
-        <div class="cv-experience">
-            <img src="img/logo-easi.png" alt="EASI Logo" class="cv-logo">
+              <!-- LACO -->
+              <div class="tl-item">
+                <div class="tl-header">
+                  <img src="img/logo-laco.jpg" alt="LACO" class="tl-logo">
+                  <div class="tl-info">
+                    <div class="tl-role">Data Consultant</div>
+                    <div class="tl-company">LACO</div>
+                  </div>
+                  <div class="tl-period">Jul. 2018 — Present</div>
+                </div>
 
-            <div class="cv-details">
-                <h4>Consultant</h4>
-                <p><strong>Period :</strong> April 2017 - June 2018</p>
-            </div>
-        </div>
+                <!-- NBB -->
+                <div class="tl-item tl-item-sub" data-expandable>
+                  <div class="tl-header">
+                    <img src="img/logo-nbb.jpg" alt="NBB" class="tl-logo">
+                    <div class="tl-info">
+                      <div class="tl-role">Data Scientist</div>
+                      <div class="tl-company">Nationale Bank van België</div>
+                      <div class="tl-hint">See details →</div>
+                    </div>
+                    <div class="tl-period">Nov. 2024 — Dec. 2025</div>
+                  </div>
+                  <div class="cv-summary">
+                    <span class="close-summary">×</span>
+                    <p><strong>Mission</strong>
+                      Analyse business processes and translate them into R or Power BI applications.
+                      R solutions were deployed via a scheduler or as interactive Shiny applications.
+                      Power BI reports were distributed via Power BI Service across the entire organisation.
+                      Development of Python POCs as part of a cloud migration initiative.
+                    </p>
+                    <p><strong>Responsibilities</strong></p>
+                    <ul>
+                      <li>Understanding user needs and business processes.</li>
+                      <li>Translating requirements into R or Power BI applications.</li>
+                      <li>Collaborating with account managers to identify their requirements.</li>
+                      <li>Application testing and solution deployment.</li>
+                      <li>Aligning with strategic objectives and data governance.</li>
+                      <li>Creating documentation.</li>
+                    </ul>
+                  </div>
+                </div>
 
-        <h3>Formations</h3>
-        <div class="cv-experience">
-            <img src="img/logo-ucl.png" alt="UCL Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Business Engineering</h4>
-                <p><strong>Period :</strong> 2011 - 2016</p>
-            </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-helha.jpg" alt="Helha Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Chemistry</h4>
-                <p><strong>Period :</strong> 2010 - 2011</p>
-            </div>
-        </div>
+                <!-- Belfius -->
+                <div class="tl-item tl-item-sub" data-expandable>
+                  <div class="tl-header">
+                    <img src="img/logo-belfius.png" alt="Belfius" class="tl-logo">
+                    <div class="tl-info">
+                      <div class="tl-role">Functional Analyst</div>
+                      <div class="tl-company">Belfius</div>
+                      <div class="tl-hint">See details →</div>
+                    </div>
+                    <div class="tl-period">Jul. 2022 — Aug. 2024</div>
+                  </div>
+                  <div class="cv-summary">
+                    <span class="close-summary">×</span>
+                    <p><strong>Mission</strong>
+                      As a Functional Data Analyst, translating business needs into functional specifications
+                      for developers (SAS EG as the reference system). Development of TDV views and APIs on OLAP/OLTP servers.
+                    </p>
+                    <p><strong>Responsibilities</strong></p>
+                    <ul>
+                      <li>Understanding user needs and business processes.</li>
+                      <li>Writing functional specifications for developers (SAS EG / SAS DI).</li>
+                      <li>Close collaboration with technical teams.</li>
+                      <li>Functional testing and acceptance.</li>
+                      <li>Creation, maintenance and management of API/TDV view access.</li>
+                      <li>Promotion of TDV solutions to higher environments.</li>
+                    </ul>
+                  </div>
+                </div>
 
-        <h3>Certifications</h3>
-        <div class="cv-experience">
-            <img src="img/logo-databricks-associate.png" alt="databricks Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Databricks Certified Data Engineer Associate</h4>
-                <p><strong>Issued :</strong> Apr 2026</p>
+                <!-- IDDI -->
+                <div class="tl-item tl-item-sub" data-expandable>
+                  <div class="tl-header">
+                    <img src="img/logo-iddi.png" alt="IDDI" class="tl-logo">
+                    <div class="tl-info">
+                      <div class="tl-role">Data Engineer</div>
+                      <div class="tl-company">IDDI</div>
+                      <div class="tl-hint">See details →</div>
+                    </div>
+                    <div class="tl-period">Feb. 2019 — Jan. 2022</div>
+                  </div>
+                  <div class="cv-summary">
+                    <span class="close-summary">×</span>
+                    <p><strong>Mission</strong>
+                      Delivery of validated, FDA-compliant clinical trial data in a biostatistics and
+                      Clinical Data Management (CDM) context using SAS.
+                    </p>
+                    <p><strong>Responsibilities</strong></p>
+                    <ul>
+                      <li>Design, optimisation and maintenance of advanced SAS macros.</li>
+                      <li>Development of SAS programs for SDTM datasets (CDISC).</li>
+                      <li>Cleaning, coding and reconciliation of clinical data.</li>
+                      <li>Standardisation and validation of SAS programs per regulatory requirements.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EASI -->
+              <div class="tl-item">
+                <div class="tl-header">
+                  <img src="img/logo-easi.png" alt="EASI" class="tl-logo">
+                  <div class="tl-info">
+                    <div class="tl-role">Consultant</div>
+                    <div class="tl-company">EASI</div>
+                  </div>
+                  <div class="tl-period">Apr. 2017 — Jun. 2018</div>
+                </div>
+              </div>
+
             </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-fabric.png" alt="microsoft Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Microsoft Certified: Fabric Analytics Engineer Associate</h4>
-                <p><strong>Issued :</strong> Jan 2026</p>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-block">
+            <div class="timeline-block-title">Education</div>
+            <div class="timeline">
+
+              <div class="tl-item">
+                <div class="tl-header">
+                  <img src="img/logo-ucl.png" alt="UCL" class="tl-logo">
+                  <div class="tl-info">
+                    <div class="tl-role">Business Engineering</div>
+                    <div class="tl-company">UCLouvain</div>
+                  </div>
+                  <div class="tl-period">2011 — 2016</div>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-header">
+                  <img src="img/logo-helha.jpg" alt="HELHa" class="tl-logo">
+                  <div class="tl-info">
+                    <div class="tl-role">Chemistry</div>
+                    <div class="tl-company">HELHa</div>
+                  </div>
+                  <div class="tl-period">2010 — 2011</div>
+                </div>
+              </div>
+
             </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-fabric.png" alt="microsoft Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Microsoft Certified: Fabric Data Engineer Associate</h4>
-                <p><strong>Issued :</strong> Jan 2026</p>
+          </div>
+
+          <!-- Certifications -->
+          <div>
+            <div class="timeline-block-title">Certifications</div>
+            <div class="cert-grid" style="margin-top: 18px;">
+
+              <div class="cert-card">
+                <img src="img/logo-databricks-associate.png" alt="Databricks" class="cert-logo">
+                <div>
+                  <div class="cert-name">Databricks Certified Data Engineer Associate</div>
+                  <div class="cert-date">Apr. 2026</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-fabric.png" alt="Microsoft" class="cert-logo">
+                <div>
+                  <div class="cert-name">Microsoft Certified: Fabric Analytics Engineer Associate</div>
+                  <div class="cert-date">Jan. 2026</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-fabric.png" alt="Microsoft" class="cert-logo">
+                <div>
+                  <div class="cert-name">Microsoft Certified: Fabric Data Engineer Associate</div>
+                  <div class="cert-date">Jan. 2026</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-powerbi.png" alt="Microsoft" class="cert-logo">
+                <div>
+                  <div class="cert-name">Microsoft Certified: Power BI Data Analyst Associate</div>
+                  <div class="cert-date">Oct. 2024</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-microsoft.jpg" alt="Microsoft" class="cert-logo">
+                <div>
+                  <div class="cert-name">Microsoft Certified: Azure Data Engineer Associate</div>
+                  <div class="cert-date">Oct. 2024</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-sas.jpg" alt="SAS" class="cert-logo">
+                <div>
+                  <div class="cert-name">SAS Certified Statistical Business Analyst — Regression &amp; Modeling</div>
+                  <div class="cert-date">Mar. 2022</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-sas.jpg" alt="SAS" class="cert-logo">
+                <div>
+                  <div class="cert-name">SAS Certified Professional: Advanced Programming</div>
+                  <div class="cert-date">Feb. 2022</div>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <img src="img/logo-sas.jpg" alt="SAS" class="cert-logo">
+                <div>
+                  <div class="cert-name">SAS Certified Base Programmer for SAS 9</div>
+                  <div class="cert-date">Jan. 2019</div>
+                </div>
+              </div>
+
             </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-powerbi.png" alt="microsoft Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Microsoft Certified: Power BI Data Analyst Associate</h4>
-                <p><strong>Issued :</strong> Oct 2024</p>
-            </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-microsoft.jpg" alt="microsoft Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>Microsoft Certified : Azure Data Engineer Associate</h4>
-                <p><strong>Issued :</strong> Oct 2024</p>
-            </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-sas.jpg" alt="sas Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>SAS Certified Statistical Business Analyst Using SAS 9: Regression and Modeling</h4>
-                <p><strong>Issued :</strong> Mar 2022</p>
-            </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-sas.jpg" alt="sas Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>SAS Certified Professional: Advanced Programming </h4>
-                <p><strong>Issued :</strong> Feb 2022</p>
-            </div>
-        </div>
-        <div class="cv-experience">
-            <img src="img/logo-sas.jpg" alt="sas Logo" class="cv-logo">
-            
-            <div class="cv-details">
-                <h4>SAS Certified Base Programmer for SAS 9</h4>
-                <p><strong>Issued :</strong> Jan 2019</p>
-            </div>
-        </div>
-    </section>
+          </div>
+
+        </main>
+
+      </div>
+    </div>
 
     <!-- ===== FOOTER ===== -->
     <div id="site-footer"></div>
 
 <script>
-document.querySelectorAll('.cv-experience-sub').forEach(exp => {
-    exp.addEventListener('click', function(e) {
-
-        // Ne pas fermer si clique sur la croix (géré ailleurs)
+document.querySelectorAll('[data-expandable]').forEach(item => {
+    item.addEventListener('click', function(e) {
         if (e.target.classList.contains('close-summary')) return;
 
-        // Fermer tous les autres résumés
-        document.querySelectorAll('.cv-summary').forEach(sum => sum.style.display = 'none');
-
-        // Ouvrir le résumé associé
         const summary = this.querySelector('.cv-summary');
-        if (summary) summary.style.display = 'block';
+        const isOpen = summary.style.display === 'block';
+
+        document.querySelectorAll('.cv-summary').forEach(s => s.style.display = 'none');
+
+        if (!isOpen) summary.style.display = 'block';
     });
 });
 
-// Fermeture via la croix
 document.querySelectorAll('.close-summary').forEach(btn => {
     btn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Empêche de rouvrir la carte
+        e.stopPropagation();
         this.parentElement.style.display = 'none';
     });
 });
